@@ -12,6 +12,11 @@ x.val += 1
 p x.val
 ```
 
+Result at first run ```2```
+
+Result at second run ```3```
+
+Result at third run ```4```
 ###Basic Usage
 
 In order to use Durable just substitute your normal variable definition by following construct:
