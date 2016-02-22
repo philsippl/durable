@@ -3,6 +3,10 @@
 Durable is a very small gem that can make changes to objects and variables persistent. Usage is super easy and only few changes to your code are needed.
 **Important: All data is only stored locally on disk.**
 
+###Installation
+```gem install durable```
+
+
 ###Minimal Example
 ```
 require "durable"
