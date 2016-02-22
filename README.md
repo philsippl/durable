@@ -92,3 +92,6 @@ Result at third run ```4```
 
 ###Resetting
 ```rm -r .DURABLE_HOME``` should do it
+
+###License
+**MIT License**
