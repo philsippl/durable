@@ -61,12 +61,8 @@ class Durable
   end
 
   def clone_helper(o)
-    begin
-      #will fail on fixnums
-      o.clone
-    rescue
-      o
-    end
+    #marshalling used here to "deep clone" the object 
+    Marshal::load(Marshal::dump(o))
   end
 
   def initialize(obj)
