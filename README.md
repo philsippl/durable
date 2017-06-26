@@ -1,13 +1,13 @@
-#Durable
+# Durable
 
 Durable is a very small (< 100 LOC) ruby gem that can make changes to objects and variables persistent. Usage is super easy and only few changes to your code are needed.
 **Important: All data is only stored locally on disk.**
 
-###Installation
+### Installation
 ```gem install durable```
 
 
-###Minimal Example
+### Minimal Example
 ```
 require "durable"
 
@@ -21,7 +21,7 @@ Result at first run ```2```
 Result at second run ```3```
 
 Result at third run ```4```
-###Basic Usage
+### Basic Usage
 
 In order to use Durable just substitute your normal variable definition by following construct:
 
@@ -52,7 +52,7 @@ x.val += 1
 **Commiting is automatically done (via exit hook) or can be explicitly forced via
 ```Durable.commit``` for all objects or via ```x.commit``` for a single object**
 
-###Configuration
+### Configuration
 Turn off autocommit (by default turned on)
 
 ```Durable.config({:autocommit => false})```
@@ -61,7 +61,7 @@ Configure home directory for Durable to store the internal files
 
 ```Durable.config({:home => ".store"})```
 
-###More Examples 
+### More Examples 
 ```
 require 'durable'
 
@@ -90,8 +90,8 @@ Result at second run ```3```
 
 Result at third run ```4```
 
-###Resetting
+### Resetting
 ```rm -r .DURABLE_HOME``` should do it
 
-###License
+### License
 **MIT License**
